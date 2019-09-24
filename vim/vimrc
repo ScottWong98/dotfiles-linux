@@ -1,0 +1,27 @@
+syntax on
+
+set nu
+set ai si ts=2 sw=2  "auto/smart indet, tabstop, shiftwidth
+colorscheme jellybeans
+set cursorline
+set showcmd
+set ls=2
+
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" statusline
+set statusline+=%4*\ %n%m%r%h%w\ %*
+set statusline+=%4*\|\ %F\ %*
+set statusline+=%4*\ %=\ %*
+set statusline+=%4*\ %Y\ %*
+set statusline+=%4*\|\ %{&ff}:%{&fenc!=''?&fenc:$enc}\ %*
+set statusline+=%4*\|\ %l\,\%v\ \|\ %p%%\ %*
+set statusline+=%4*\|\ %L\ %*
+"hi User2 cterm=bold ctermfg=232 ctermbg=179
+"hi User3 cterm=bold ctermfg=214 ctermbg=242
+"hi User4 cterm=bold ctermfg=251 ctermbg=240
+"hi User4 cterm=bold ctermfg=169 ctermbg=239
+"hi User4 cterm=None ctermfg=208 ctermbg=238
+hi User4 cterm=bold ctermfg=246 ctermbg=237
+"hi User7 cterm=None ctermfg=250 ctermbg=238
+"hi User8 cterm=None ctermfg=249 ctermbg=240

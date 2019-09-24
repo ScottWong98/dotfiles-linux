@@ -1,0 +1,14 @@
+
+# Query my default IP address only on startup
+[ip]
+command=hostname -i | awk '{ print " " $1 }'
+interval=once
+
+[battery]
+command=./battery.sh
+interval=10
+
+[time]
+command=date '+%m-%d %T'
+label= 
+interval=1

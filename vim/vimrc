@@ -1,13 +1,18 @@
 syntax on
 
-set nu
-set ai si ts=2 sw=2  "auto/smart indet, tabstop, shiftwidth
 colorscheme jellybeans
+set nu relativenumber
+set ai si ts=2 sw=2  "auto/smart indet, tabstop, shiftwidth
 set cursorline
 set showcmd
 set ls=2
+set hlsearch incsearch ignorecase smartcase
+exec "nohlsearch"
+set wildmenu
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+
 
 " statusline
 set statusline+=%4*\ %n%m%r%h%w\ %*

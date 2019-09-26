@@ -29,7 +29,7 @@ smart_borders on
 exec --no-startup-id nm-applet
 
 # Set Wallpaper
-exec --no-startup-id feh --bg-fill $HOME/Pictures/Wallpapers/4.jpg
+exec --no-startup-id feh --bg-fill $HOME/Pictures/Wallpapers/5.jpg
 #exec --no-startup-id compton -b
 
 # Start Fcitx

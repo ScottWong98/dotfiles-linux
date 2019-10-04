@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/scott/dotfiles/.git'
+let g:netrw_dirhist_2='/boot/EFI/EFI'
 let g:netrw_dirhist_1='/home/scott/.config/Typora/themes/catfish'

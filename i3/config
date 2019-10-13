@@ -43,7 +43,7 @@ floating_modifier $mod
 # start chromium
 bindsym $mod+c exec chromium
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill

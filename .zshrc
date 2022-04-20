@@ -5,6 +5,7 @@ PS1=' 🐥🐥🐥 %F{111}%~%f%B%F{189} >> %f%b'
 
 alias ls='ls --color=auto'
 alias vi='nvim'
+alias ll='ls -alh'
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -30,4 +31,3 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/autojump/autojump.zsh
 
-eval "$(zoxide init zsh)"
